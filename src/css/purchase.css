@@ -1,0 +1,78 @@
+/* src/pages/Purchase.css */
+.purchase-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .purchase-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .purchase-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .purchase-box {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+  
+  .purchase-box h3 {
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .cart-list img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .status.success {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .purchase-box.total {
+    text-align: center;
+    border-top: 2px dashed #ddd;
+  }
+  
+  .purchase-btn {
+    background-color: #2d72d9;
+    color: white;
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .purchase-btn:hover {
+    background-color: #1c57b2;
+  }
+  

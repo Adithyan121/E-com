@@ -1,0 +1,169 @@
+/* Parent Container */
+.profile-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Profile Card Block */
+.profile-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Avatar */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #2d72d9;
+}
+
+/* Contact Info */
+.profile-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+/* Username, email, phone text */
+.profile-card h2 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.profile-card p {
+  margin: 0.2rem 0;
+  color: #555;
+  text-align: center;
+  word-break: break-word; /* ensures long email/phone doesn't break layout */
+}
+
+/* Buttons */
+.edit-btn,
+.add-btn,
+.view-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #2d72d9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #195bb5;
+}
+
+.add-btn,
+.view-btn {
+  background-color: #00a86b;
+}
+
+.add-btn:hover,
+.view-btn:hover {
+  background-color: #007f53;
+}
+
+/* Sections Row */
+.profile-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Individual Section */
+.section {
+  flex: 1 1 300px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section h3 {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* 🔥 Responsive Media Queries */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .edit-btn,
+  .add-btn,
+  .view-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-sections {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .section {
+    flex: 1 1 100%;
+  }
+}
+
+/* Extra responsive tweaks for small screens */
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 0.5rem;
+  }
+
+  .profile-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 1rem;
+  }
+
+  .edit-btn,
+  .add-btn,
+  .view-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

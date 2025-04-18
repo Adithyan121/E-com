@@ -1,0 +1,27 @@
+/* src/components/Search.css */
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 25px;
+    padding: 0.2rem 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .search-form input {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.95rem;
+    border-radius: 25px;
+    width: 150px;
+  }
+  
+  .search-form button {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 0.4rem;
+  }
+  
